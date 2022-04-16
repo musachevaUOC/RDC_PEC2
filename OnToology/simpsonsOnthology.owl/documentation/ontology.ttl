@@ -39,20 +39,24 @@
 :ActedOn rdf:type owl:ObjectProperty ;
          rdfs:domain :nonFiction ;
          rdfs:range :adaptations ;
-         rdfs:comment "has performed as voice actor for the adaptation" .
+         rdfs:comment "has performed as voice actor for the adaptation" ;
+         rdfs:label "Acted on an adaptation" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather
 :isFather rdf:type owl:ObjectProperty ;
           rdfs:domain :Character ;
           rdfs:range :Character ;
-          rdfs:comment "Is the father of a character" .
+          rdfs:comment "Is the father of a character" ;
+          rdfs:label "is father of" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling
 :isSibling rdf:type owl:ObjectProperty ;
            rdfs:domain :Character ;
-           rdfs:range :Character .
+           rdfs:range :Character ;
+           rdfs:comment "is sibling of" ;
+           rdfs:label "is sibling of" .
 
 
 ###  http://www.w3.org/2002/07/owl#differentFrom
@@ -67,14 +71,16 @@ owl:differentFrom rdf:type owl:ObjectProperty .
 :character_name rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Character ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The name of a character in the show" .
+                rdfs:comment "The name of a character in the show" ;
+                rdfs:label "Character name" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name
 :episode_name rdf:type owl:DatatypeProperty ;
               rdfs:domain :episode ;
               rdfs:range xsd:string ;
-              rdfs:comment "The name of a TV show episode" .
+              rdfs:comment "The name of a TV show episode" ;
+              rdfs:label "Episode Name" .
 
 
 #################################################################
@@ -84,13 +90,17 @@ owl:differentFrom rdf:type owl:ObjectProperty .
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#BoardGag
 :BoardGag rdf:type owl:Class ;
           rdfs:subClassOf :openingScene ;
-          rdfs:comment "Board gag made by the character Bart right at the beginning of the oppening" .
+          owl:disjointWith :sofaGag ;
+          rdfs:comment "Board gag made by the character Bart right at the beginning of the oppening" ;
+          rdfs:label "Board gag" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character
 :Character rdf:type owl:Class ;
            rdfs:subClassOf :inFiction ;
-           rdfs:comment "Finctional characters of the simpsons" .
+           owl:disjointWith :job ;
+           rdfs:comment "Finctional characters of the simpsons" ;
+           rdfs:label "Character" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father
@@ -100,92 +110,126 @@ owl:differentFrom rdf:type owl:ObjectProperty .
                           owl:onProperty :isFather ;
                           owl:allValuesFrom :Character
                         ] ;
-        rdfs:comment "is the father of one of the characters" .
+        owl:disjointWith :Mother ;
+        rdfs:comment "is the father of one of the characters" ;
+        rdfs:label "Father" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother
 :Mother rdf:type owl:Class ;
         rdfs:subClassOf :Character ;
-        rdfs:comment "Is the mother of one of the characters" .
+        rdfs:comment "Is the mother of one of the characters" ;
+        rdfs:label "Mother" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place
 :Place rdf:type owl:Class ;
-       rdfs:subClassOf :inFiction .
+       rdfs:subClassOf :inFiction ;
+       owl:disjointWith :job ;
+       rdfs:label "Place" .
+
+
+###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons
+:The_Simpsons rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ;
+              rdfs:comment "Class that represents the simpsons top level onthology" ;
+              rdfs:label "Simpsons Onthology class" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations
 :adaptations rdf:type owl:Class ;
              rdfs:subClassOf :nonFiction ;
-             rdfs:comment "Adaptations made from the original series" .
+             owl:disjointWith :animation ;
+             rdfs:comment "Adaptations made from the original series" ;
+             rdfs:label "Adaptation" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation
 :animation rdf:type owl:Class ;
-           rdfs:subClassOf :nonFiction .
+           rdfs:subClassOf :nonFiction ;
+           rdfs:comment "All related to the tv show animation" ;
+           rdfs:label "animation" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode
 :episode rdf:type owl:Class ;
          rdfs:subClassOf :season ;
-         rdfs:comment "Episode from the series" .
+         rdfs:comment "Episode from the series" ;
+         rdfs:label "episode" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction
 :inFiction rdf:type owl:Class ;
-           rdfs:comment "In fiction class, with information regarding in fictional knowledge." .
+           rdfs:subClassOf :The_Simpsons ;
+           owl:disjointWith :nonFiction ;
+           rdfs:comment "In fiction class, with information regarding in fictional knowledge." ;
+           rdfs:label "in fiction" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job
 :job rdf:type owl:Class ;
      rdfs:subClassOf :inFiction ;
-     rdfs:comment "Job or occupation of a character" .
+     rdfs:comment "Job or occupation of a character" ;
+     rdfs:label "Job" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#movie
 :movie rdf:type owl:Class ;
        rdfs:subClassOf :adaptations ;
-       rdfs:comment "Movie adaptation of the series" .
+       owl:disjointWith :series ,
+                        :videogame ;
+       rdfs:comment "Movie adaptation of the series" ;
+       rdfs:label "movie" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction
 :nonFiction rdf:type owl:Class ;
-            rdfs:comment "Class regarding non fictional Information" .
+            rdfs:subClassOf :The_Simpsons ;
+            rdfs:comment "Class regarding non fictional Information" ;
+            rdfs:label "Non fiction" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene
 :openingScene rdf:type owl:Class ;
               rdfs:subClassOf :episode ;
-              rdfs:comment "Opening scene on TV show information" .
+              rdfs:comment "Opening scene on TV show information" ;
+              rdfs:label "Opening scene" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season
 :season rdf:type owl:Class ;
         rdfs:subClassOf :series ;
-        rdfs:comment "Tv show season" .
+        rdfs:comment "Tv show season" ;
+        rdfs:label "season" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series
 :series rdf:type owl:Class ;
         rdfs:subClassOf :adaptations ;
-        rdfs:comment "Main series knowledge" .
+        owl:disjointWith :videogame ;
+        rdfs:comment "Main series knowledge" ;
+        rdfs:label "series" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag
 :sofaGag rdf:type owl:Class ;
          rdfs:subClassOf :openingScene ;
-         rdfs:comment "Sofa gag made by the family right at the end of the oppening" .
+         rdfs:comment "Sofa gag made by the family right at the end of the oppening" ;
+         rdfs:label "sofa gag" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#studio
 :studio rdf:type owl:Class ;
-        rdfs:subClassOf :animation .
+        rdfs:subClassOf :animation ;
+        rdfs:comment "studio who performed the animation" ;
+        rdfs:label "studio" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame
 :videogame rdf:type owl:Class ;
            rdfs:subClassOf :adaptations ;
-           rdfs:comment "videogame adaptations of the series" .
+           rdfs:comment "videogame adaptations of the series" ;
+           rdfs:label "videogame" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor
@@ -196,13 +240,15 @@ owl:differentFrom rdf:type owl:ObjectProperty .
                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onClass :adaptations
                             ] ;
-            rdfs:comment "Voice actor of an adaptation related to the TV series" .
+            rdfs:comment "Voice actor of an adaptation related to the TV series" ;
+            rdfs:label "Voice actor" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer
 :writer rdf:type owl:Class ;
         rdfs:subClassOf :nonFiction ;
-        rdfs:comment "Writer of an episode" .
+        rdfs:comment "Writer of an episode" ;
+        rdfs:label "Writer" .
 
 
 #################################################################
