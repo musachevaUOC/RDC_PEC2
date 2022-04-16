@@ -1,0 +1,522 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid14"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid17"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid19"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid26"
+    }, {
+      "@id" : "_:genid24"
+    }, {
+      "@id" : "_:genid22"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid28"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson"
+    }, {
+      "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson"
+    }, {
+      "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#John_Swartzwelder"
+    }, {
+      "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson"
+    }, {
+      "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#dan_castellaneta"
+    }, {
+      "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Bart_Simpson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Homer_Simpson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Lisa_Simpson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Mikhail Usacheva Uryvskiy"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The Simpsons is an American animated sitcom created by Matt Groening. The series is a satirical description of American life set on a fictional town of Springfield. The main characters are the Simpsons family, consisted of Homer, Marge, Bart, Lisa and Maggie."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "The Simpsons Ontology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "has performed as voice actor for the adaptation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name" : [ {
+    "@value" : "Bart Simpson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#BoardGag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Board gag made by the character Bart right at the beginning of the oppening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Finctional characters of the simpsons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "is the father of one of the characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name" : [ {
+    "@value" : "Homer Simpson"
+  } ],
+  "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson"
+  }, {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#John_Swartzwelder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name" : [ {
+    "@value" : "Lisa Simpson"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is the mother of one of the characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Adaptations made from the original series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of a character in the show"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#dan_castellaneta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Episode from the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of a TV show episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name" : [ {
+    "@value" : "Treehouse of Horror IV"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In fiction class, with information regarding in fictional knowledge."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is the father of a character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Job or occupation of a character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#movie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Movie adaptation of the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class regarding non fictional Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Opening scene on TV show information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tv show season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Main series knowledge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sofa gag made by the family right at the end of the oppening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#studio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "videogame adaptations of the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Voice actor of an adaptation related to the TV series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Writer of an episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#differentFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]
