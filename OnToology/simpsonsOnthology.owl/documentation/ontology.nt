@@ -1,0 +1,355 @@
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology> <http://purl.org/dc/elements/1.1/creator> "Mikhail Usacheva Uryvskiy" .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology> <http://purl.org/dc/elements/1.1/description> "The Simpsons is an American animated sitcom created by Matt Groening. The series is a satirical description of American life set on a fictional town of Springfield. The main characters are the Simpsons family, consisted of Homer, Marge, Bart, Lisa and Maggie." .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology> <http://purl.org/dc/elements/1.1/title> "The Simpsons Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "has performed as voice actor for the adaptation" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> <http://www.w3.org/2000/01/rdf-schema#comment> "Is the father of a character" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+# 
+# http://www.w3.org/2002/07/owl#differentFrom
+<http://www.w3.org/2002/07/owl#differentFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a character in the show" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a TV show episode" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#BoardGag
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#BoardGag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#BoardGag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#BoardGag> <http://www.w3.org/2000/01/rdf-schema#comment> "Board gag made by the character Bart right at the beginning of the oppening" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Finctional characters of the simpsons" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father> <http://www.w3.org/2000/01/rdf-schema#comment> "is the father of one of the characters" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother> <http://www.w3.org/2000/01/rdf-schema#comment> "Is the mother of one of the characters" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> <http://www.w3.org/2000/01/rdf-schema#comment> "Adaptations made from the original series" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode from the series" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/2000/01/rdf-schema#comment> "In fiction class, with information regarding in fictional knowledge." .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job> <http://www.w3.org/2000/01/rdf-schema#comment> "Job or occupation of a character" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#movie
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#movie> <http://www.w3.org/2000/01/rdf-schema#comment> "Movie adaptation of the series" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> <http://www.w3.org/2000/01/rdf-schema#comment> "Class regarding non fictional Information" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene> <http://www.w3.org/2000/01/rdf-schema#comment> "Opening scene on TV show information" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season> <http://www.w3.org/2000/01/rdf-schema#comment> "Tv show season" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series> <http://www.w3.org/2000/01/rdf-schema#comment> "Main series knowledge" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag> <http://www.w3.org/2000/01/rdf-schema#comment> "Sofa gag made by the family right at the end of the oppening" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#studio
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#studio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#studio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame> <http://www.w3.org/2000/01/rdf-schema#comment> "videogame adaptations of the series" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Voice actor of an adaptation related to the TV series" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer> <http://www.w3.org/2000/01/rdf-schema#comment> "Writer of an episode" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/Bart_Simpson
+<http://dbpedia.org/resource/Bart_Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Bart_Simpson> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson
+# 
+# http://dbpedia.org/resource/Homer_Simpson
+<http://dbpedia.org/resource/Homer_Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Homer_Simpson> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson
+# 
+# http://dbpedia.org/resource/Lisa_Simpson
+<http://dbpedia.org/resource/Lisa_Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Lisa_Simpson> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name> "Bart Simpson" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name> "Homer Simpson" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#John_Swartzwelder
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#John_Swartzwelder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#John_Swartzwelder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#character_name> "Lisa Simpson" .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#dan_castellaneta
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#dan_castellaneta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#dan_castellaneta> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5> .
+# 
+# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_name> "Treehouse of Horror IV" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid3 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode_s5_e5> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#dan_castellaneta> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Lisa_Simpson> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#John_Swartzwelder> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Bart_Simpson> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid10 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid10 <http://www.w3.org/2003/11/swrl#body> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x> .
+_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#ActedOn> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/2003/11/swrl#head> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#voiceActor> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid15 <http://www.w3.org/2003/11/swrl#body> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y> .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x> .
+_:genid17 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/2003/11/swrl#head> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x> .
+_:genid19 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid20 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid20 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z> .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x> .
+_:genid24 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#x> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#z> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#y> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
