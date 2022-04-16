@@ -249,6 +249,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Acted on an adaptation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
   } ]
@@ -264,8 +267,14 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Board gag made by the character Bart right at the beginning of the oppening"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Board gag"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character",
@@ -273,8 +282,14 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Finctional characters of the simpsons"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Character"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father",
@@ -282,10 +297,16 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "is the father of one of the characters"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Father"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
   }, {
     "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Homer_Simpson",
@@ -316,14 +337,35 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Is the mother of one of the characters"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mother"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class that represents the simpsons top level onthology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Simpsons Onthology class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations",
@@ -331,12 +373,24 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Adaptations made from the original series"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Adaptation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "All related to the tv show animation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "animation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
   } ]
@@ -348,6 +402,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Character name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -364,6 +421,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Episode from the series"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "episode"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season"
   } ]
@@ -375,6 +435,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Episode Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -390,6 +453,15 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "In fiction class, with information regarding in fictional knowledge."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "in fiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isFather",
@@ -400,14 +472,23 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is father of"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "is sibling of"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is sibling of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"
@@ -418,6 +499,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Job or occupation of a character"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Job"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"
   } ]
@@ -427,20 +511,37 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Movie adaptation of the series"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "movie"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series"
+  }, {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Class regarding non fictional Information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Non fiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Opening scene on TV show information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Opening scene"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode"
@@ -451,6 +552,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Tv show season"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "season"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series"
   } ]
@@ -460,8 +564,14 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Main series knowledge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "series"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag",
@@ -469,12 +579,21 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Sofa gag made by the family right at the end of the oppening"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sofa gag"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#studio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "studio who performed the animation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "studio"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation"
   } ]
@@ -484,6 +603,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "videogame adaptations of the series"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "videogame"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"
   } ]
@@ -492,6 +614,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Voice actor of an adaptation related to the TV series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Voice actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"
@@ -503,6 +628,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Writer of an episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Writer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"

@@ -78,6 +78,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"/>
         <rdfs:comment>has performed as voice actor for the adaptation</rdfs:comment>
+        <rdfs:label>Acted on an adaptation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -89,6 +90,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"/>
         <rdfs:comment>Is the father of a character</rdfs:comment>
+        <rdfs:label>is father of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -99,6 +101,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"/>
+        <rdfs:comment>is sibling of</rdfs:comment>
+        <rdfs:label>is sibling of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -129,6 +133,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The name of a character in the show</rdfs:comment>
+        <rdfs:label>Character name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -140,6 +145,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The name of a TV show episode</rdfs:comment>
+        <rdfs:label>Episode Name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -161,7 +167,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#BoardGag">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag"/>
         <rdfs:comment>Board gag made by the character Bart right at the beginning of the oppening</rdfs:comment>
+        <rdfs:label>Board gag</rdfs:label>
     </owl:Class>
     
 
@@ -171,7 +179,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job"/>
         <rdfs:comment>Finctional characters of the simpsons</rdfs:comment>
+        <rdfs:label>Character</rdfs:label>
     </owl:Class>
     
 
@@ -187,7 +197,9 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother"/>
         <rdfs:comment>is the father of one of the characters</rdfs:comment>
+        <rdfs:label>Father</rdfs:label>
     </owl:Class>
     
 
@@ -198,6 +210,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Mother">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Character"/>
         <rdfs:comment>Is the mother of one of the characters</rdfs:comment>
+        <rdfs:label>Mother</rdfs:label>
     </owl:Class>
     
 
@@ -207,6 +220,19 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job"/>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Class that represents the simpsons top level onthology</rdfs:comment>
+        <rdfs:label>Simpsons Onthology class</rdfs:label>
     </owl:Class>
     
 
@@ -216,7 +242,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation"/>
         <rdfs:comment>Adaptations made from the original series</rdfs:comment>
+        <rdfs:label>Adaptation</rdfs:label>
     </owl:Class>
     
 
@@ -226,6 +254,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"/>
+        <rdfs:comment>All related to the tv show animation</rdfs:comment>
+        <rdfs:label>animation</rdfs:label>
     </owl:Class>
     
 
@@ -236,6 +266,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season"/>
         <rdfs:comment>Episode from the series</rdfs:comment>
+        <rdfs:label>episode</rdfs:label>
     </owl:Class>
     
 
@@ -244,7 +275,10 @@
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"/>
         <rdfs:comment>In fiction class, with information regarding in fictional knowledge.</rdfs:comment>
+        <rdfs:label>in fiction</rdfs:label>
     </owl:Class>
     
 
@@ -255,6 +289,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"/>
         <rdfs:comment>Job or occupation of a character</rdfs:comment>
+        <rdfs:label>Job</rdfs:label>
     </owl:Class>
     
 
@@ -264,7 +299,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#movie">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame"/>
         <rdfs:comment>Movie adaptation of the series</rdfs:comment>
+        <rdfs:label>movie</rdfs:label>
     </owl:Class>
     
 
@@ -273,7 +311,9 @@
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons"/>
         <rdfs:comment>Class regarding non fictional Information</rdfs:comment>
+        <rdfs:label>Non fiction</rdfs:label>
     </owl:Class>
     
 
@@ -284,6 +324,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#episode"/>
         <rdfs:comment>Opening scene on TV show information</rdfs:comment>
+        <rdfs:label>Opening scene</rdfs:label>
     </owl:Class>
     
 
@@ -294,6 +335,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series"/>
         <rdfs:comment>Tv show season</rdfs:comment>
+        <rdfs:label>season</rdfs:label>
     </owl:Class>
     
 
@@ -303,7 +345,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#series">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame"/>
         <rdfs:comment>Main series knowledge</rdfs:comment>
+        <rdfs:label>series</rdfs:label>
     </owl:Class>
     
 
@@ -314,6 +358,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#sofaGag">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#openingScene"/>
         <rdfs:comment>Sofa gag made by the family right at the end of the oppening</rdfs:comment>
+        <rdfs:label>sofa gag</rdfs:label>
     </owl:Class>
     
 
@@ -323,6 +368,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#studio">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#animation"/>
+        <rdfs:comment>studio who performed the animation</rdfs:comment>
+        <rdfs:label>studio</rdfs:label>
     </owl:Class>
     
 
@@ -333,6 +380,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#videogame">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations"/>
         <rdfs:comment>videogame adaptations of the series</rdfs:comment>
+        <rdfs:label>videogame</rdfs:label>
     </owl:Class>
     
 
@@ -350,6 +398,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Voice actor of an adaptation related to the TV series</rdfs:comment>
+        <rdfs:label>Voice actor</rdfs:label>
     </owl:Class>
     
 
@@ -360,6 +409,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#writer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"/>
         <rdfs:comment>Writer of an episode</rdfs:comment>
+        <rdfs:label>Writer</rdfs:label>
     </owl:Class>
     
 
