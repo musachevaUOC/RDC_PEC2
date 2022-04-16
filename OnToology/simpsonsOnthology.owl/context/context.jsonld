@@ -13,6 +13,9 @@
     "season" : {
       "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#season"
     },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
     "isRuleEnabled" : {
       "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
     },
@@ -83,6 +86,9 @@
     },
     "Father" : {
       "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Father"
+    },
+    "The_Simpsons" : {
+      "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons"
     },
     "isSibling" : {
       "@id" : "http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#isSibling",
