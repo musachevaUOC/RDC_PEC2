@@ -123,13 +123,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "A place inside the fiction of the series" .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
-# 
-# http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons
-<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents the simpsons top level onthology" .
-<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons> <http://www.w3.org/2000/01/rdf-schema#label> "Simpsons Onthology class" .
 # 
 # http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -152,7 +147,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/2000/01/rdf-schema#comment> "In fiction class, with information regarding in fictional knowledge." .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction> <http://www.w3.org/2000/01/rdf-schema#label> "in fiction" .
@@ -173,7 +168,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons> .
+<http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> <http://www.w3.org/2000/01/rdf-schema#comment> "Class regarding non fictional Information" .
 <http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction> <http://www.w3.org/2000/01/rdf-schema#label> "Non fiction" .
 # 
