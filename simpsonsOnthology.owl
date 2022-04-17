@@ -196,17 +196,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#Place">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#job"/>
+        <rdfs:comment>A place inside the fiction of the series</rdfs:comment>
         <rdfs:label>Place</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>Class that represents the simpsons top level onthology</rdfs:comment>
-        <rdfs:label>Simpsons Onthology class</rdfs:label>
     </owl:Class>
     
 
@@ -245,7 +236,7 @@
     <!-- http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fiction class, with information regarding in fictional knowledge.</rdfs:comment>
         <rdfs:label>in fiction</rdfs:label>
@@ -278,7 +269,7 @@
     <!-- http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class regarding non fictional Information</rdfs:comment>
         <rdfs:label>Non fiction</rdfs:label>
     </owl:Class>
