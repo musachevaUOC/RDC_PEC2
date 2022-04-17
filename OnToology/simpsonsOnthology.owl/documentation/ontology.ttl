@@ -126,14 +126,8 @@ owl:differentFrom rdf:type owl:ObjectProperty .
 :Place rdf:type owl:Class ;
        rdfs:subClassOf :inFiction ;
        owl:disjointWith :job ;
+       rdfs:comment "A place inside the fiction of the series" ;
        rdfs:label "Place" .
-
-
-###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#The_Simpsons
-:The_Simpsons rdf:type owl:Class ;
-              rdfs:subClassOf owl:Thing ;
-              rdfs:comment "Class that represents the simpsons top level onthology" ;
-              rdfs:label "Simpsons Onthology class" .
 
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#adaptations
@@ -160,7 +154,7 @@ owl:differentFrom rdf:type owl:ObjectProperty .
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#inFiction
 :inFiction rdf:type owl:Class ;
-           rdfs:subClassOf :The_Simpsons ;
+           rdfs:subClassOf owl:Thing ;
            owl:disjointWith :nonFiction ;
            rdfs:comment "In fiction class, with information regarding in fictional knowledge." ;
            rdfs:label "in fiction" .
@@ -184,7 +178,7 @@ owl:differentFrom rdf:type owl:ObjectProperty .
 
 ###  http://www.semanticweb.org/Mikhail/ontologies/2022/3/the-Simpsons-Onthology#nonFiction
 :nonFiction rdf:type owl:Class ;
-            rdfs:subClassOf :The_Simpsons ;
+            rdfs:subClassOf owl:Thing ;
             rdfs:comment "Class regarding non fictional Information" ;
             rdfs:label "Non fiction" .
 
